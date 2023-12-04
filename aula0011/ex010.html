@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN </title>
     <style>
+        body{ background-color: white;
+
+        }
         
     </style>
 </head>
 <body>
     <h1>Sistema de multas</h1>
+
+    <p>velocidade máxima permitida é de 80 km/h</p>
     velocidade do carro:
     <input type="number" name="txtvel" id="txtvel">
     km/r
@@ -25,8 +30,9 @@
             var txtv = window.document.getElementById('txtvel')
             var vel = Number(txtv.value)
             res.innerHTML = `<p>sua velocidade é de <strong>${vel} km/h</strong</p>`
-                if (vel > 100) {
+                if (vel > 80) {
                     res.innerHTML += `<p>velocidade maxima ultrapassada. <strong>multado!</strong></p>`  
+                    document.body.style.background = 'red'
                 }
             res.innerHTML += `<p>dirija sempre com cinto de segurança</p>`
 
