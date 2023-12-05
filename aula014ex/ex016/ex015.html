@@ -13,19 +13,19 @@
  
     <section>
         <div>
-            <p> ano de nascimento:<input type="number" name="txtano" id="ano" min="0" max="2023" value="2000" ></p>
-            <p> sexo:
-                <input type="radio" name="sex" id="mas" checked>
-                <label for="sex">masculino</label>
-
-                <input type="radio" name="sex" id="fem">
-                <label for="sex2">feminino</label>
+            <p> 
+                início:<input type="number" name="txtini" id="txti" min="0">
             </p>
             <p>
-                <input type="button" value="verificar" id="btn" onclick="verificar()">
+               fim:<input type="number" name="txtfim" id="txtf" min="0">
+
             </p>
+            <p>
+                passo:<input type="number" name="txtpasso" id="txtp" min="0" >
+            </p>
+           <p><input type="button" value="contar" onclick="calcular()"></p>
         </div>
-        <div id="res"> </div>
+        <div id="res">  </div>
     </section>
 
     <footer>
